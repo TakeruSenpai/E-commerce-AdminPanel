@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin Panel</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="layout">
+
+    <nav class="sidebar">
+      <h2 class="logo"> Admin</h2>
+      <ul>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 1000" width="24px" fill="currentcolor"><path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h560q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H200Zm0-80h240v-560H200v560Zm320 0h240v-280H520v280Zm0-360h240v-200H520v200Z"/></svg><span>Dashboard</span></a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 1000" width="24px" fill="currentcolor"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg><span>Edit</span></a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 1000" width="24px" fill="currentcolor"><path d="M160-160v-516L82-846l72-34 94 202h464l94-202 72 34-78 170v516H160Zm240-280h160q17 0 28.5-11.5T600-480q0-17-11.5-28.5T560-520H400q-17 0-28.5 11.5T360-480q0 17 11.5 28.5T400-440ZM240-240h480v-358H240v358Zm0 0v-358 358Z"/></svg><span>Orders</span></a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 1000" width="24px" fill="currentcolor"><path d="M440-360h60v-80h100q17 0 28.5-11.5T640-480v-80q0-17-11.5-28.5T600-600H440v240Zm240 0h60v-240h-60v240ZM500-500v-40h80v40h-80ZM240-360h120q17 0 28.5-11.5T400-400v-200h-60v180h-80v-180h-60v200q0 17 11.5 28.5T240-360Zm-80 200q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm0-80h640v-480H160v480Zm0 0v-480 480Z"/></svg><span>Payments</span></a></li>
+        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 1000" width="24px" fill="currentcolor"><path d="m363-390 117-71 117 71-31-133 104-90-137-11-53-126-53 126-137 11 104 90-31 133ZM80-80v-720q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v480q0 33-23.5 56.5T800-240H240L80-80Zm126-240h594v-480H160v525l46-45Zm-46 0v-480 480Z"/></svg><span>Reviews</span></a></li>
+      </ul>
+    </nav>
+
+   <main class="content">
+  <h1>Product Manager</h1>
+
+  <form id="productForm" style="margin-top:20px;">
+    <input type="text" id="name" placeholder="Product Name" required /><br><br>
+
+    <input type="number" id="price" placeholder="Price" required /><br><br>
+
+    <input type="text" id="category" placeholder="Category" /><br><br>
+
+    <input type="text" id="image" placeholder="Image URL" /><br><br>
+
+    <input type="number" id="stock" placeholder="Stock" /><br><br>
+
+    <textarea id="description" placeholder="Description"></textarea><br><br>
+
+    <button type="submit">Add Product</button>
+  </form>
+
+  <hr style="margin:30px 0">
+
+  <h2>All Products</h2>
+  <div id="productList"></div>
+</main>
+
+<script src="script.js"></script>
+
+  </div>
+
+</body>
+</html>
+
